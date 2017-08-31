@@ -1,0 +1,12 @@
+<!doctype html>
+<html>
+    <head>
+        <title>{% block title %}Flask Basic{% endblock %}</title> <!-- You can override the block title-->
+        <link rel="stylesheet" type="text/css" href="/static/styles.css">
+    </head>
+    <body>
+        {% block content %}{% endblock %} <!-- You can override the block content-->
+        <p>Brought to you by fine folks at Treehouse</p>
+        {% block scripts%}{% endblock %}
+    </body>
+</html>
