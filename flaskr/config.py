@@ -61,3 +61,8 @@ def configure_app(app):
     app.security = Security(app, user_datastore)
     # Configure Compressing
     Compress(app)
+
+
+
+
+    

@@ -1,19 +1,76 @@
 {% extends "base.html" %}
-
-{% block title %}Index | {{super()}}{% endblock %}
-
 {% block content %}
-<h1>Hello from {{name}}</h1>
-    <div class="form-container">
-        <h3>Please vote it!</h3>
-        <form action = "/login" method = "post">
-         <p>Enter Name:</p>
-         <p><input type = "text" name = "nm" /></p>
-         <p><input type = "submit" value = "submit" /></p>
-        </form>    
+  <section class="section">
+    <div class="container">
+      <h1 class="title">
+        Vote! Vote! Vote! We need your vote!
+      </h1>
+      <p class="subtitle">
+        We are local statistics company collecting your feedback about this year CE candidate. You are welcome to express your opions. 
+      </p>
+      <p>You will see the trend after you vote it!<p>
     </div>
-{% endblock %}
-
-{% block scripts%}
-<script src="/static/scripts.js"></script>
+  </section>
+  
+  <div style="margin-right: 420px">
+  <form action = "/login" method = "post">
+    <span id="btn1" style="margin-left: 10%"><button class="button is-primary"> Vote me! </button></span>
+    <span id="btn2" style="margin-left: 22%"><button class="button is-warning"> Vote me! </button></span>
+    <span id="btn3" style="margin-left: 22%"><button class="button is-info"> Vote me! </button></span>
+  </form>
+  </div> 
+<div class="tile is-ancestor">
+  <div class="tile is-vertical is-8">
+    <div class="tile">
+      <div class="tile is-parent">
+        <article class="tile is-child notification is-primary">
+          <p class="title">Mr.Potato</p>
+          <p class="subtitle">We are all Together!!</p>
+          <figure class="image is-4by3">
+            <img src="/static/images/clumsy.jpg">
+          </figure>
+        </article>
+      </div>
+      <div class="tile is-parent">
+        <article class="tile is-child notification is-warning">
+          <p class="title">Mrs.Lam</p>
+          <p class="subtitle">WinWin 2.0</p>
+          <figure class="image is-4by3">
+            <img src="/static/images/little_princess.jpg">
+          </figure>
+        </article>
+      </div>
+      <div class="tile is-parent">
+        <article class="tile is-child notification is-info">
+          <p class="title">Mr.Judge</p>
+          <p class="subtitle">We need to be fair</p>
+          <figure class="image is-4by3">
+            <img src="/static/images/slow.jpg">
+          </figure>
+        </article>
+      </div>
+    </div>
+    <div class="tile is-parent">
+      <article class="tile is-child notification is-danger">
+        <p class="title">2046 CE Selection</p>
+        <p class="subtitle">Vote for the future! Please vote</p>
+        <div class="content">
+          <!-- Content -->
+        </div>
+      </article>
+    </div>
+  </div>
+  <div class="tile is-parent">
+    <article class="tile is-child notification is-success">
+      <div class="content">
+        <p class="title">Tall tile</p>
+        <p class="subtitle">With even more content</p>
+        <div class="content">
+          <!-- Content -->
+        </div>
+      </div>
+    </article>
+  </div>
+</div>
+</style>
 {% endblock %}

@@ -1,17 +1,19 @@
 <!doctype html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">        
-        <title>{% block title %}Flask Basic{% endblock %}</title> <!-- You can override the block title-->
-        <link rel="stylesheet" type="text/css" href="/static/styles.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css">
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>2046 | CE Selection</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css"> 
+  </head>
     <body>
         {% block content %}{% endblock %} <!-- You can override the block content-->
         {% block scripts%}{% endblock %}
-        <div class="pg-footer">
+    <footer class="footer">
+      <div class="container">
+        <div class="content has-text-centered">
             <div id="janice">
                 <i class="fa fa-heart" aria-hidden="true"></i>
                 <a>Brought to you by Janice Cheng</a>
@@ -25,5 +27,7 @@
                 <span>contact me: jcchoiling@gmail.com</span>
             </div>
         </div>
+      </div>
+    </footer>
     </body>
 </html>
