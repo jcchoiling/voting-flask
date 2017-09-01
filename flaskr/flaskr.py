@@ -19,19 +19,19 @@ def index(name='Flaskr'):
     return render_template("index.html", name = name)
 
 
-@app.route('/welcome/<name>')
-def welcome(name):
-    return render_template("welcome.html", name = name)
+@app.route('/success/<name>')
+def success(name):
+    return render_template("success.html", name = name)
 
 
 @app.route('/login', methods=['POST','GET'])
 def login():
     if request.method == 'POST':
         user = request.form['nm']
-        return redirect(url_for('welcome', name = user))
+        return redirect(url_for('success', name = user))
     else:
         user = request.args.get('nm')
-        return redirect(url_for('welcome', name = user))
+        return redirect(url_for('success', name = user))
 
 
 if __name__ == "__main__":
