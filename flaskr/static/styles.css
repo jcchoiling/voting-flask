@@ -1,3 +1,24 @@
 body{
     background: beige;
 }
+
+.pg-footer a {
+    font-size: 12px;
+    text-align: left;
+    cursor: pointer;
+
+}
+
+#janice{
+    margin-top: 10px;
+    font-size: 10px;
+    color: purple;
+}
+
+.comments-containers {
+    margin: 5px 0 10px 0;
+}
+
+#btn1 {
+    margin-left: 50px;
+}

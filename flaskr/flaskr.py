@@ -1,14 +1,8 @@
 from flask import Flask
-from flask import request, render_template
+from flask import request, render_template, redirect, url_for
 
 
 app = Flask(__name__) # create the application instance :)
-
-
-@app.route("/")
-@app.route("/<name>")
-def index(name='Flaskr'):
-    return render_template("index.html", name = name)
 
 
 @app.route("/add/<int:num1>/<float:num2>")
@@ -19,5 +13,26 @@ def add(num1, num2):
     context = {'num1':num1, 'num2':num2}
     return render_template("add.html", **context)
 
+# web logic starts here
+@app.route("/") # bind the uri to the index function 
+def index(name='Flaskr'):
+    return render_template("index.html", name = name)
 
-app.run(debug=True, port=8000, host='0.0.0.0')
+
+@app.route('/welcome/<name>')
+def welcome(name):
+    return render_template("welcome.html", name = name)
+
+
+@app.route('/login', methods=['POST','GET'])
+def login():
+    if request.method == 'POST':
+        user = request.form['nm']
+        return redirect(url_for('welcome', name = user))
+    else:
+        user = request.args.get('nm')
+        return redirect(url_for('welcome', name = user))
+
+
+if __name__ == "__main__":
+    app.run(debug=True, port=8000, host='0.0.0.0')
