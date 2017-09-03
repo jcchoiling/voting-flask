@@ -1,10 +1,13 @@
 import os
 import logging
 
+APP_ROOT = os.path.dirname(os.path.abspath(__file__)) 
+
 
 class BaseConfig(object):
     DEBUG = False
     TESTING = False
+    FLASK_APP = APP_ROOT + 'run.py'
     # sqlite :memory: identifier is the default if no filepath is present
     SQLALCHEMY_DATABASE_URI = 'sqlite://'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
