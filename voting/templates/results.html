@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block title %}Results{% endblock %}
+
+{% block content %}
+<div>
+    <h1 style="display: inline-block">Thank you for voting {{click_data['username']}}!!</h1>
+    <p>Please check the current results</p>	
+	<a class="button is-primary" style="display: inline-block; float: right; margin-right: 100px;" href="/">Back to Home</a>
+</div>
+      <div>{{result}}</div>
+<canvas id="doughnut-chart" width="500" height="100"></canvas>
+<canvas id="line-chart" width="500" height="100"></canvas>
+{% endblock %}
+
+{% block scripts%}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+
+<!-- <script src="/static/js/scripts.js" type="text/javascript"></script> -->
+<script type="text/javascript">
+	new Chart(document.getElementById("doughnut-chart"), {
+    type: 'doughnut',
+    data: {
+      labels: {{user_list|safe}},
+      datasets: [
+        {
+          label: "2046 CE Selection",
+          backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f"],
+          data: {{data|safe}}
+        }
+      ]
+    },
+    options: {
+      title: {
+        display: true,
+        text: 'CE Selection in 2046'
+      }
+    }
+});
+</script>
+{% endblock %}
+

@@ -1,0 +1,4 @@
+2017-09-03 11:44:07,310 - __main__ - INFO - A record was successfully added: {'username': 'Mr.Potato', 'value': 1}
+2017-09-03 11:44:07,318 - __main__ - INFO - Response sent
+2017-09-03 11:44:59,177 - __main__ - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 11:44:59,186 - __main__ - INFO - Response sent
