@@ -22,7 +22,7 @@ Next is to install the Python virtual environment package
     sudo pip3 install virtualenv
 
 ## Getting Started
-First clone the demo in your linux folder, e.g. /home/ubuntu/
+First clone the demo into your linux folder, e.g. /home/ubuntu/
 
     git clone https://github.com/jcchoiling/voting-flask.git
 
