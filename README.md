@@ -5,7 +5,7 @@ This is a voting demo to collect data from the web interface. This demo demonstr
 3. The backend process to retrieve the aggregated data back to the frontend visualization.
 3. A Pie Chart to display the total button click and a histogam to display the last 10 minus count distribution
 
-##Environment Setup
+## Environment Setup
 I assume it is a brand new linux instance, e.g. EC2 instance with t2.micro. Let's start by updating the environment and prepare the execution platform. This demo is written in Python and we will make use of python virtual environment to run it. Therefore, we have to get Python installed before moving forward. 
 
 _Below code install the following components:_
