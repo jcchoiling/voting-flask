@@ -1,0 +1,2 @@
+recursive-include voting/templates *
+recursive-include voting/static *
