@@ -12,10 +12,10 @@ _Below code install the following components:_
 * python3 package manager (pip3) - that is to help install python package with minimal effort at maintaining the package location.
 * python virtual environment - that is to separate your project dependencies with other project.
 
-    sudo apt-get update -y
-    sudo apt install python3-pip -y
-    sudo apt install python3 -y
-    sudo apt-get install python-virtualenv -y
+        sudo apt-get update -y
+        sudo apt install python3-pip -y
+        sudo apt install python3 -y
+        sudo apt-get install python-virtualenv -y
 
 Next is to install the Python virtual environment package
 
