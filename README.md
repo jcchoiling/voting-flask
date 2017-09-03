@@ -6,5 +6,5 @@ flask initdb
 flask run
 
 
-<img src=https://imgur.com/pfik5S7>
-<img src=https://imgur.com/BLjSpXj>
+<img src=https://i.imgur.com/pfik5S7.png>
+<img src=https://i.imgur.com/BLjSpXj.png>
