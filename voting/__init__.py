@@ -5,6 +5,7 @@ import json
 
 from voting import config
 from sqlalchemy.sql import func
+from sqlalchemy import text
 from datetime import datetime
 from flask_sqlalchemy import SQLAlchemy
 from flask import Flask, flash, render_template, request, make_response, current_app
@@ -53,10 +54,38 @@ def handle_data():
         user_list = [user[0] for user in query_res]
         data = [user[1] for user in query_res]
 
+        sql_text = (
+        """
+        SELECT 
+            username, 
+            CAST((JulianDay(Datetime('now','localtime')) - JulianDay(created_at)) * 24 * 60 As Integer),
+            sum(value)
+        FROM user 
+        WHERE created_at >= Datetime('now', '-10 minutes','localtime')
+        AND created_at < Datetime('now','localtime')
+        GROUP BY 1,2
+        """)
+        agg_result = db.engine.execute(sql_text)
+
+        data_dict ={
+            "Mr.Judge":{0:0,1:0,2:0,3:0,4:0,5:0,6:0,7:0,8:0,9:0,10:0},
+            "Mr.Potato":{0:0,1:0,2:0,3:0,4:0,5:0,6:0,7:0,8:0,9:0,10:0},
+            "Mrs.Lam":{0:0,1:0,2:0,3:0,4:0,5:0,6:0,7:0,8:0,9:0,10:0}
+        }
+        for row in agg_result:
+            user = row[0]
+            time_mins = row[1]
+            value = row[2]
+            data_dict[user][time_mins] = value
+
+        agg_data = [list(val.values()) for val in data_dict.values()]
+
         response = make_response(render_template("results.html", 
             click_data=click_data, 
             data=data, 
-            user_list=user_list))
+            user_list=user_list,
+            agg_data=agg_data)
+        )
 
         current_app.logger.info("Response sent")
 

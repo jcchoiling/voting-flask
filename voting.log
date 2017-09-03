@@ -1,28 +1,274 @@
-2017-09-03 14:56:10,909 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
-2017-09-03 14:56:10,919 - voting - INFO - Response sent
-2017-09-03 14:57:08,439 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
-2017-09-03 14:57:08,451 - voting - INFO - Response sent
-2017-09-03 14:57:13,192 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
-2017-09-03 14:57:13,194 - voting - INFO - Response sent
-2017-09-03 14:57:14,651 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
-2017-09-03 14:57:14,655 - voting - INFO - Response sent
-2017-09-03 14:57:16,467 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
-2017-09-03 14:57:16,469 - voting - INFO - Response sent
-2017-09-03 14:57:18,324 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
-2017-09-03 14:57:18,326 - voting - INFO - Response sent
-2017-09-03 14:57:19,942 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
-2017-09-03 14:57:19,945 - voting - INFO - Response sent
-2017-09-03 14:57:23,360 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
-2017-09-03 14:57:23,364 - voting - INFO - Response sent
-2017-09-03 14:57:25,976 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
-2017-09-03 14:57:25,977 - voting - INFO - Response sent
-2017-09-03 14:57:27,858 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
-2017-09-03 14:57:27,860 - voting - INFO - Response sent
-2017-09-03 14:57:30,546 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
-2017-09-03 14:57:30,548 - voting - INFO - Response sent
-2017-09-03 14:57:33,044 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
-2017-09-03 14:57:33,046 - voting - INFO - Response sent
-2017-09-03 14:57:36,500 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
-2017-09-03 14:57:36,504 - voting - INFO - Response sent
-2017-09-03 14:57:39,629 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
-2017-09-03 14:57:39,632 - voting - INFO - Response sent
+2017-09-03 19:52:48,247 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 19:52:48,254 - voting - INFO - Response sent
+2017-09-03 19:53:01,199 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 19:53:01,203 - voting - INFO - Response sent
+2017-09-03 19:53:32,472 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 19:53:32,478 - voting - INFO - Response sent
+2017-09-03 19:53:42,423 - voting - INFO - A record was successfully added: {'username': 'Mr.Judge', 'value': 3}
+2017-09-03 19:53:42,427 - voting - INFO - Response sent
+2017-09-03 19:53:59,098 - voting - INFO - A record was successfully added: {'username': 'Mr.Judge', 'value': 3}
+2017-09-03 19:53:59,102 - voting - INFO - Response sent
+2017-09-03 19:54:42,271 - voting - INFO - A record was successfully added: {'username': 'Mr.Potato', 'value': 1}
+2017-09-03 19:54:42,284 - voting - INFO - Response sent
+2017-09-03 19:55:21,538 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 19:55:21,541 - voting - INFO - Response sent
+2017-09-03 19:56:32,979 - voting - INFO - A record was successfully added: {'username': 'Mr.Judge', 'value': 3}
+2017-09-03 19:56:32,985 - voting - INFO - Response sent
+2017-09-03 19:56:38,884 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 19:56:38,886 - voting - INFO - Response sent
+2017-09-03 19:57:42,214 - voting - INFO - A record was successfully added: {'username': 'Mr.Potato', 'value': 1}
+2017-09-03 19:57:42,220 - voting - INFO - Response sent
+2017-09-03 19:58:29,942 - voting - INFO - A record was successfully added: {'username': 'Mr.Judge', 'value': 3}
+2017-09-03 19:58:29,949 - voting - INFO - Response sent
+2017-09-03 19:59:11,931 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 19:59:11,936 - voting - INFO - Response sent
+2017-09-03 20:00:16,151 - voting - INFO - A record was successfully added: {'username': 'Mr.Judge', 'value': 3}
+2017-09-03 20:00:16,158 - voting - INFO - Response sent
+2017-09-03 20:02:32,305 - voting - INFO - A record was successfully added: {'username': 'Mr.Judge', 'value': 3}
+2017-09-03 20:02:32,309 - voting - INFO - Response sent
+2017-09-03 20:02:57,461 - voting - INFO - A record was successfully added: {'username': 'Mr.Judge', 'value': 3}
+2017-09-03 20:02:57,482 - voting - INFO - Response sent
+2017-09-03 20:03:52,456 - voting - INFO - A record was successfully added: {'username': 'Mr.Judge', 'value': 3}
+2017-09-03 20:03:52,460 - voting - INFO - Response sent
+2017-09-03 20:03:52,473 - voting - INFO - A record was successfully added: {'username': 'Mr.Judge', 'value': 3}
+2017-09-03 20:03:52,476 - voting - INFO - Response sent
+2017-09-03 20:05:30,804 - voting - INFO - A record was successfully added: {'username': 'Mr.Judge', 'value': 3}
+2017-09-03 20:05:30,811 - voting - INFO - Response sent
+2017-09-03 20:07:21,110 - voting - INFO - A record was successfully added: {'username': 'Mr.Judge', 'value': 3}
+2017-09-03 20:07:21,120 - voting - INFO - Response sent
+2017-09-03 20:07:44,666 - voting - INFO - A record was successfully added: {'username': 'Mr.Judge', 'value': 3}
+2017-09-03 20:07:44,672 - voting - INFO - Response sent
+2017-09-03 20:09:37,722 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 20:09:37,729 - voting - INFO - Response sent
+2017-09-03 20:09:53,748 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 20:09:53,758 - voting - INFO - Response sent
+2017-09-03 20:11:45,209 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 20:11:45,217 - voting - INFO - Response sent
+2017-09-03 20:12:13,460 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 20:12:13,470 - voting - INFO - Response sent
+2017-09-03 20:12:18,908 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 20:12:18,910 - voting - INFO - Response sent
+2017-09-03 20:12:21,400 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 20:12:21,402 - voting - INFO - Response sent
+2017-09-03 20:12:28,230 - voting - INFO - A record was successfully added: {'username': 'Mr.Judge', 'value': 3}
+2017-09-03 20:12:28,233 - voting - INFO - Response sent
+2017-09-03 20:12:31,343 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 20:12:31,345 - voting - INFO - Response sent
+2017-09-03 20:13:24,291 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 20:13:24,298 - voting - INFO - Response sent
+2017-09-03 20:14:34,640 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 20:15:07,579 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 20:15:07,589 - voting - INFO - Response sent
+2017-09-03 20:15:27,642 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 20:15:27,652 - voting - INFO - Response sent
+2017-09-03 20:16:20,833 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 20:16:20,839 - voting - INFO - Response sent
+2017-09-03 20:17:13,383 - voting - INFO - A record was successfully added: {'username': 'Mr.Judge', 'value': 3}
+2017-09-03 20:17:13,391 - voting - INFO - Response sent
+2017-09-03 20:17:35,990 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 20:17:36,007 - voting - INFO - Response sent
+2017-09-03 20:17:54,901 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 20:17:54,914 - voting - INFO - Response sent
+2017-09-03 20:18:36,159 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 20:18:36,166 - voting - INFO - Response sent
+2017-09-03 20:18:53,745 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 20:18:53,757 - voting - INFO - Response sent
+2017-09-03 20:19:08,288 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 20:19:08,296 - voting - INFO - Response sent
+2017-09-03 20:48:43,600 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 20:48:43,614 - voting - INFO - Response sent
+2017-09-03 20:49:24,754 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 20:52:48,052 - voting - INFO - A record was successfully added: {'username': 'Mr.Judge', 'value': 3}
+2017-09-03 20:54:24,183 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 20:54:44,227 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 20:54:44,240 - voting - INFO - Response sent
+2017-09-03 20:55:06,449 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 20:55:06,463 - voting - INFO - Response sent
+2017-09-03 20:55:38,006 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 20:55:38,019 - voting - INFO - Response sent
+2017-09-03 20:55:58,720 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 20:55:58,733 - voting - INFO - Response sent
+2017-09-03 20:57:24,284 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 20:57:24,288 - voting - INFO - Response sent
+2017-09-03 21:01:21,297 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 21:01:32,888 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 21:01:32,912 - voting - INFO - Response sent
+2017-09-03 21:04:36,091 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 21:04:36,106 - voting - INFO - Response sent
+2017-09-03 21:05:22,051 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 21:05:22,064 - voting - INFO - Response sent
+2017-09-03 21:06:06,596 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 21:06:06,608 - voting - INFO - Response sent
+2017-09-03 21:10:53,265 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 21:10:53,284 - voting - INFO - Response sent
+2017-09-03 21:10:55,138 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 21:10:55,141 - voting - INFO - Response sent
+2017-09-03 21:10:56,717 - voting - INFO - A record was successfully added: {'username': 'Mr.Potato', 'value': 1}
+2017-09-03 21:10:56,719 - voting - INFO - Response sent
+2017-09-03 21:10:58,099 - voting - INFO - A record was successfully added: {'username': 'Mr.Potato', 'value': 1}
+2017-09-03 21:10:58,102 - voting - INFO - Response sent
+2017-09-03 21:10:59,685 - voting - INFO - A record was successfully added: {'username': 'Mr.Judge', 'value': 3}
+2017-09-03 21:10:59,687 - voting - INFO - Response sent
+2017-09-03 21:11:00,791 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 21:11:00,794 - voting - INFO - Response sent
+2017-09-03 21:11:02,220 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 21:11:02,226 - voting - INFO - Response sent
+2017-09-03 21:11:29,573 - voting - INFO - A record was successfully added: {'username': 'Mr.Potato', 'value': 1}
+2017-09-03 21:11:29,577 - voting - INFO - Response sent
+2017-09-03 21:11:31,083 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 21:11:31,087 - voting - INFO - Response sent
+2017-09-03 21:11:38,122 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 21:11:38,126 - voting - INFO - Response sent
+2017-09-03 21:11:51,772 - voting - INFO - A record was successfully added: {'username': 'Mr.Judge', 'value': 3}
+2017-09-03 21:11:51,775 - voting - INFO - Response sent
+2017-09-03 21:12:02,615 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 21:12:02,619 - voting - INFO - Response sent
+2017-09-03 21:12:57,318 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 21:12:57,332 - voting - INFO - Response sent
+2017-09-03 21:15:11,942 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 21:15:11,957 - voting - INFO - Response sent
+2017-09-03 21:15:52,041 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 21:15:52,056 - voting - INFO - Response sent
+2017-09-03 21:18:02,709 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 21:18:02,731 - voting - INFO - Response sent
+2017-09-03 21:24:24,651 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 21:24:39,734 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 21:24:39,758 - voting - INFO - Response sent
+2017-09-03 21:24:57,245 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 21:24:57,259 - voting - INFO - Response sent
+2017-09-03 21:26:02,766 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 21:26:02,779 - voting - INFO - Response sent
+2017-09-03 21:26:26,187 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 21:26:26,202 - voting - INFO - Response sent
+2017-09-03 21:26:27,583 - voting - INFO - A record was successfully added: {'username': 'Mr.Judge', 'value': 3}
+2017-09-03 21:26:27,586 - voting - INFO - Response sent
+2017-09-03 21:26:29,529 - voting - INFO - A record was successfully added: {'username': 'Mr.Potato', 'value': 1}
+2017-09-03 21:26:29,532 - voting - INFO - Response sent
+2017-09-03 21:26:30,909 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 21:26:30,911 - voting - INFO - Response sent
+2017-09-03 21:26:32,582 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 21:26:32,586 - voting - INFO - Response sent
+2017-09-03 21:26:35,828 - voting - INFO - A record was successfully added: {'username': 'Mr.Potato', 'value': 1}
+2017-09-03 21:26:35,832 - voting - INFO - Response sent
+2017-09-03 21:26:37,134 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 21:26:37,141 - voting - INFO - Response sent
+2017-09-03 21:26:38,885 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 21:26:38,888 - voting - INFO - Response sent
+2017-09-03 21:27:16,706 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 21:27:16,721 - voting - INFO - Response sent
+2017-09-03 21:27:46,925 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 21:27:46,940 - voting - INFO - Response sent
+2017-09-03 21:28:40,455 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 21:28:40,466 - voting - INFO - Response sent
+2017-09-03 21:29:17,978 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 21:29:17,992 - voting - INFO - Response sent
+2017-09-03 21:47:01,844 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 21:47:01,859 - voting - INFO - Response sent
+2017-09-03 21:49:13,067 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 21:49:13,085 - voting - INFO - Response sent
+2017-09-03 21:49:18,973 - voting - INFO - A record was successfully added: {'username': 'Mr.Judge', 'value': 3}
+2017-09-03 21:49:18,980 - voting - INFO - Response sent
+2017-09-03 21:49:20,584 - voting - INFO - A record was successfully added: {'username': 'Mr.Judge', 'value': 3}
+2017-09-03 21:49:20,588 - voting - INFO - Response sent
+2017-09-03 21:49:22,155 - voting - INFO - A record was successfully added: {'username': 'Mr.Potato', 'value': 1}
+2017-09-03 21:49:22,158 - voting - INFO - Response sent
+2017-09-03 21:49:24,933 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 21:49:24,939 - voting - INFO - Response sent
+2017-09-03 21:49:27,065 - voting - INFO - A record was successfully added: {'username': 'Mr.Potato', 'value': 1}
+2017-09-03 21:49:27,068 - voting - INFO - Response sent
+2017-09-03 21:49:30,436 - voting - INFO - A record was successfully added: {'username': 'Mr.Potato', 'value': 1}
+2017-09-03 21:49:30,439 - voting - INFO - Response sent
+2017-09-03 21:49:33,170 - voting - INFO - A record was successfully added: {'username': 'Mr.Potato', 'value': 1}
+2017-09-03 21:49:33,172 - voting - INFO - Response sent
+2017-09-03 21:49:35,468 - voting - INFO - A record was successfully added: {'username': 'Mr.Potato', 'value': 1}
+2017-09-03 21:49:35,472 - voting - INFO - Response sent
+2017-09-03 21:49:37,414 - voting - INFO - A record was successfully added: {'username': 'Mr.Potato', 'value': 1}
+2017-09-03 21:49:37,417 - voting - INFO - Response sent
+2017-09-03 21:49:38,951 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 21:49:38,954 - voting - INFO - Response sent
+2017-09-03 21:49:41,304 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 21:49:41,311 - voting - INFO - Response sent
+2017-09-03 21:49:44,061 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 21:49:44,070 - voting - INFO - Response sent
+2017-09-03 21:49:50,773 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 21:49:50,776 - voting - INFO - Response sent
+2017-09-03 21:49:53,191 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 21:49:53,193 - voting - INFO - Response sent
+2017-09-03 21:49:56,040 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 21:49:56,043 - voting - INFO - Response sent
+2017-09-03 21:49:58,463 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 21:49:58,471 - voting - INFO - Response sent
+2017-09-03 21:49:59,897 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 21:49:59,905 - voting - INFO - Response sent
+2017-09-03 21:50:01,441 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 21:50:01,444 - voting - INFO - Response sent
+2017-09-03 21:50:02,863 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 21:50:02,866 - voting - INFO - Response sent
+2017-09-03 21:50:04,982 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 21:50:04,986 - voting - INFO - Response sent
+2017-09-03 21:50:06,380 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 21:50:06,385 - voting - INFO - Response sent
+2017-09-03 21:50:15,056 - voting - INFO - A record was successfully added: {'username': 'Mr.Judge', 'value': 3}
+2017-09-03 21:50:15,061 - voting - INFO - Response sent
+2017-09-03 21:50:16,431 - voting - INFO - A record was successfully added: {'username': 'Mr.Judge', 'value': 3}
+2017-09-03 21:50:16,435 - voting - INFO - Response sent
+2017-09-03 21:50:17,788 - voting - INFO - A record was successfully added: {'username': 'Mr.Judge', 'value': 3}
+2017-09-03 21:50:17,795 - voting - INFO - Response sent
+2017-09-03 21:50:19,034 - voting - INFO - A record was successfully added: {'username': 'Mr.Judge', 'value': 3}
+2017-09-03 21:50:19,036 - voting - INFO - Response sent
+2017-09-03 21:50:20,331 - voting - INFO - A record was successfully added: {'username': 'Mr.Judge', 'value': 3}
+2017-09-03 21:50:20,334 - voting - INFO - Response sent
+2017-09-03 21:50:21,671 - voting - INFO - A record was successfully added: {'username': 'Mr.Judge', 'value': 3}
+2017-09-03 21:50:21,674 - voting - INFO - Response sent
+2017-09-03 21:50:22,992 - voting - INFO - A record was successfully added: {'username': 'Mr.Judge', 'value': 3}
+2017-09-03 21:50:22,995 - voting - INFO - Response sent
+2017-09-03 21:50:25,558 - voting - INFO - A record was successfully added: {'username': 'Mr.Potato', 'value': 1}
+2017-09-03 21:50:25,560 - voting - INFO - Response sent
+2017-09-03 21:50:27,337 - voting - INFO - A record was successfully added: {'username': 'Mr.Potato', 'value': 1}
+2017-09-03 21:50:27,340 - voting - INFO - Response sent
+2017-09-03 21:50:29,506 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 21:50:29,509 - voting - INFO - Response sent
+2017-09-03 21:50:31,124 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 21:50:31,127 - voting - INFO - Response sent
+2017-09-03 21:50:32,705 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 21:50:32,710 - voting - INFO - Response sent
+2017-09-03 21:50:34,214 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 21:50:34,218 - voting - INFO - Response sent
+2017-09-03 21:50:35,833 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 21:50:35,835 - voting - INFO - Response sent
+2017-09-03 21:50:38,727 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 21:50:38,731 - voting - INFO - Response sent
+2017-09-03 21:50:39,951 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 21:50:39,955 - voting - INFO - Response sent
+2017-09-03 21:50:41,471 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 21:50:41,474 - voting - INFO - Response sent
+2017-09-03 21:50:42,859 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 21:50:42,861 - voting - INFO - Response sent
+2017-09-03 21:50:44,322 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 21:50:44,325 - voting - INFO - Response sent
+2017-09-03 21:50:45,665 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 21:50:45,669 - voting - INFO - Response sent
+2017-09-03 21:50:46,933 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 21:50:46,935 - voting - INFO - Response sent
+2017-09-03 21:50:48,200 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 21:50:48,202 - voting - INFO - Response sent
+2017-09-03 21:50:49,682 - voting - INFO - A record was successfully added: {'username': 'Mr.Potato', 'value': 1}
+2017-09-03 21:50:49,686 - voting - INFO - Response sent
+2017-09-03 21:50:51,102 - voting - INFO - A record was successfully added: {'username': 'Mr.Potato', 'value': 1}
+2017-09-03 21:50:51,104 - voting - INFO - Response sent
+2017-09-03 21:50:52,874 - voting - INFO - A record was successfully added: {'username': 'Mr.Potato', 'value': 1}
+2017-09-03 21:50:52,878 - voting - INFO - Response sent
+2017-09-03 21:50:54,374 - voting - INFO - A record was successfully added: {'username': 'Mr.Potato', 'value': 1}
+2017-09-03 21:50:54,377 - voting - INFO - Response sent
+2017-09-03 21:50:55,894 - voting - INFO - A record was successfully added: {'username': 'Mr.Potato', 'value': 1}
+2017-09-03 21:50:55,896 - voting - INFO - Response sent
+2017-09-03 21:50:57,313 - voting - INFO - A record was successfully added: {'username': 'Mr.Potato', 'value': 1}
+2017-09-03 21:50:57,318 - voting - INFO - Response sent
+2017-09-03 21:50:59,348 - voting - INFO - A record was successfully added: {'username': 'Mr.Potato', 'value': 1}
+2017-09-03 21:50:59,354 - voting - INFO - Response sent
+2017-09-03 21:51:41,596 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 21:51:41,603 - voting - INFO - Response sent
+2017-09-03 21:52:38,352 - voting - INFO - A record was successfully added: {'username': 'Mr.Potato', 'value': 1}
+2017-09-03 21:52:38,361 - voting - INFO - Response sent
+2017-09-03 21:53:40,092 - voting - INFO - A record was successfully added: {'username': 'Mrs.Lam', 'value': 2}
+2017-09-03 21:53:40,116 - voting - INFO - Response sent

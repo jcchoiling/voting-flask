@@ -1,59 +1,50 @@
-new Chart(document.getElementById("doughnut-chart"), {
+var doughnutChartctx = document.getElementById('doughnutChart').getContext('2d');
+  new Chart(doughnutChartctx, {
     type: 'doughnut',
     data: {
-      labels: ["Africa", "Asia", "Europe", "Latin America", "North America"],
+      labels: {{user_list|safe}},
       datasets: [
         {
-          label: "Population (millions)",
-          backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
-          data: [2478,5267,734,784,433]
+          label: "2046 CE Selection",
+          backgroundColor: ["#3273DC", "#00D1B2","#FFDD57"],
+          data: {{data|safe}}
         }
       ]
     },
     options: {
       title: {
         display: true,
-        text: 'Predicted world population (millions) in 2050'
+        text: 'CE Selection in 2046'
       }
     }
 });
 
-new Chart(document.getElementById("line-chart"), {
-  type: 'line',
-  data: {
-    labels: [1500,1600,1700,1750,1800,1850,1900,1950,1999,2050],
-    datasets: [{ 
-        data: [86,114,106,106,107,111,133,221,783,2478],
-        label: "Africa",
-        borderColor: "#3e95cd",
-        fill: false
-      }, { 
-        data: [282,350,411,502,635,809,947,1402,3700,5267],
-        label: "Asia",
-        borderColor: "#8e5ea2",
-        fill: false
-      }, { 
-        data: [168,170,178,190,203,276,408,547,675,734],
-        label: "Europe",
-        borderColor: "#3cba9f",
-        fill: false
-      }, { 
-        data: [40,20,10,16,24,38,74,167,508,784],
-        label: "Latin America",
-        borderColor: "#e8c3b9",
-        fill: false
-      }, { 
-        data: [6,3,2,2,7,26,82,172,312,433],
-        label: "North America",
-        borderColor: "#c45850",
-        fill: false
-      }
-    ]
-  },
-  options: {
-    title: {
-      display: true,
-      text: 'World population per region (in millions)'
-    }
-  }
+var stackedChartctx = document.getElementById('stackedChart').getContext('2d');
+var chart = new Chart(stackedChartctx, {
+    type: 'line',
+    data: {
+        labels: ["1 min", "2 mins", "3 mins", "4 mins", "5 mins", "6 mins", "7 mins","8 mins","9 mins","10 mins"],
+        datasets: [
+        {
+            label: "{{user_list[0]|safe}}",
+            backgroundColor: '#3273DC',
+            borderColor: '#3273DC',
+            data: [0, 1, 3, 5, 3, 0, 3, 0, 2, 4],
+        },
+        {
+            label: "{{user_list[1]|safe}}",
+            backgroundColor: '#00D1B2',
+            borderColor: '#00D1B2',
+            data: [0, 4, 8, 12, 49, 29, 1, 2, 5, 0],
+        },
+        {
+            label: "{{user_list[2]|safe}}",
+            backgroundColor: '#FFDD57',
+            borderColor: '#FFDD57',
+            data: [0, 10, 5, 2, 20, 30, 45, 2, 3, 4],
+        }
+
+        ]
+    },
+    options: {}
 });
