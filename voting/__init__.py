@@ -90,6 +90,8 @@ def handle_data():
         current_app.logger.info("Response sent")
 
         return response
+    else:
+        return render_template("results.html")
 
 
 

@@ -9,8 +9,9 @@ This is a voting demo to collect data from the web interface. This demo demonstr
 I assume it is a brand new linux instance, e.g. EC2 instance with t2.micro. Let's start by updating the environment and prepare the execution platform. This demo is written in Python and we will make use of python virtual environment to run it. Therefore, we have to get Python installed before moving forward. 
 
 _Below code install the following components:_
-* python3 package manager (pip3) - that is to help install python package with minimal effort at maintaining the package location.
-* python virtual environment - that is to separate your project dependencies with other project.
+* Python3 package manager (pip3) - that is to help install python package with minimal effort at maintaining the package location.
+* Python virtual environment - that is to separate your project dependencies with other project.
+* Python3 - the demo works well with Python 3.5 or above. In Ubuntu, it is by default has Python3.5 installed
 
         sudo apt-get update -y
         sudo apt install python3-pip -y
@@ -30,13 +31,18 @@ Move the project folder. e.g. voting-flask
     
     cd voting-flask
 
-create an virtual environment to run the demo
+create an virtual environment to run the demo.
 
     virtualenv venv
 
+##### *Just to remind this demo works well with python version 3.5 above, in case you have lower version and you want to create different version of python virtual environment. You will have to use the specific python to run the script as below.*
+
+        # virtualenv -p /usr/local/Cellar/python3/3.6.2/bin/python3.6 venv
+  
+
 enable the virtual environment
 
-    . venv/bin/activate
+    source venv/bin/activate
 
 Last but not least, download the project dependency library by executing:
 

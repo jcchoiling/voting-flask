@@ -11,3 +11,6 @@ voting/__pycache__/
  
 # Instance Folder - used for configuration parameters
 /instance
+
+# Python virtual environment
+venv
