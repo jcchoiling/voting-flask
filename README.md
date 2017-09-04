@@ -65,11 +65,13 @@ start the app
 If you see the same message shown below which means that you have successfully started the voting-demo. Please open a browser and input http://127.0.0.1:5000/ to check the results.
 
 (venv) ubuntu@ip-172-31-24-71:~/voting-flask$ python3 run.py
- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
  * Restarting with stat
  * Debugger is active!
  * Debugger PIN: 103-055-927    
 
+
+ Next, you can access the webserver by http://<ec2-public-ip>:5000
 
 <img src=https://i.imgur.com/pfik5S7.png>
 <img src=https://i.imgur.com/qnEfmM1.png>
