@@ -8,6 +8,19 @@ This is a voting demo to collect data from the web interface. This demo demonstr
 ## Environment Setup
 I assume it is a brand new linux instance, e.g. EC2 instance with t2.micro. Let's start by updating the environment and prepare the execution platform. This demo is written in Python and we will make use of python virtual environment to run it. Therefore, we have to get Python installed before moving forward. 
 
+First clone the demo into your linux folder, e.g. /home/ubuntu/
+
+    git clone https://github.com/jcchoiling/voting-flask.git
+    
+Run the setup.sh for environment setup:
+
+    bash setup.sh 
+    
+#### *If you have already executed the setup.sh, you don't have to run the following code, you can directly jump to _Getting Start_.*
+
+### Environment Setup - Details
+This section explain the action in the setup.sh
+
 _Below code install the following components:_
 * Python3 package manager (pip3) - that is to help install python package with minimal effort at maintaining the package location.
 * Python virtual environment - that is to separate your project dependencies with other project.
@@ -23,9 +36,6 @@ Next is to install the Python virtual environment package
     sudo pip3 install virtualenv
 
 ## Getting Started
-First clone the demo into your linux folder, e.g. /home/ubuntu/
-
-    git clone https://github.com/jcchoiling/voting-flask.git
 
 Move the project folder. e.g. voting-flask  
     
@@ -35,7 +45,7 @@ create an virtual environment to run the demo.
 
     virtualenv venv
 
-##### *Just to remind this demo works well with python version 3.5 above, in case you have lower version and you want to create different version of python virtual environment. You will have to use the specific python to run the script as below.*
+##### *Just to remind this demo works well with python version 3.5 or above, in case you have lower version and you want to create different version of python virtual environment. You will have to use the specific python to run the script as below.*
 
         # virtualenv -p /usr/local/Cellar/python3/3.6.2/bin/python3.6 venv
   
