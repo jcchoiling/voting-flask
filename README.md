@@ -43,7 +43,7 @@ Move the project folder. e.g. voting-flask
 
 create an virtual environment to run the demo.
 
-    virtualenv venv
+    virtualenv -p python3 venv
 
 ##### *Just to remind this demo works well with python version 3.5 or above, in case you have lower version and you want to create different version of python virtual environment. You will have to use the specific python to run the script as below.*
 
