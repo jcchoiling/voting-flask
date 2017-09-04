@@ -54,7 +54,7 @@ start the app
 
 If you see the same message shown below which means that you have successfully started the voting-demo. Please open a browser and input http://127.0.0.1:5000/ to check the results.
 
-(venv) ubuntu@ip-172-31-24-71:~/voting-flask$ ./run.py
+(venv) ubuntu@ip-172-31-24-71:~/voting-flask$ python3 run.py
  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
  * Restarting with stat
  * Debugger is active!
