@@ -71,7 +71,7 @@ If you see the same message shown below which means that you have successfully s
  * Debugger PIN: 103-055-927    
 
 
- Next, you can access the webserver by http://<ec2-public-ip>:5000
+ Next, you can access the webserver by http://ec2-public-ip:5000
 
 <img src=https://i.imgur.com/pfik5S7.png>
 <img src=https://i.imgur.com/qnEfmM1.png>
