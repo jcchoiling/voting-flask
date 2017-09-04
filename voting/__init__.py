@@ -38,9 +38,47 @@ def index():
     return render_template("index.html")
 
 
+def get_last_10_mins_data():
+    sql_text = (
+    """
+    SELECT 
+        username, 
+        CAST((JulianDay(Datetime('now','localtime')) - JulianDay(created_at)) * 24 * 60 As Integer),
+        sum(value)
+    FROM user 
+    WHERE created_at >= Datetime('now', '-10 minutes','localtime')
+    AND created_at < Datetime('now','localtime')
+    GROUP BY 1,2
+    """)
+    agg_result = db.engine.execute(sql_text)
+
+    data_dict ={
+        "Mr.Judge":{0:0,1:0,2:0,3:0,4:0,5:0,6:0,7:0,8:0,9:0,10:0},
+        "Mr.Potato":{0:0,1:0,2:0,3:0,4:0,5:0,6:0,7:0,8:0,9:0,10:0},
+        "Mrs.Lam":{0:0,1:0,2:0,3:0,4:0,5:0,6:0,7:0,8:0,9:0,10:0}
+    }
+    for row in agg_result:
+        user = row[0]
+        time_mins = row[1]
+        value = row[2]
+        data_dict[user][time_mins] = value
+
+    data = [list(val.values()) for val in data_dict.values()]
+    return data
+
+
+def get_sum_data():
+    #[('Mr.Judge', 4), ('Mr.Potato', 5), ('Mrs.Lam', 5)]
+    query_res = db.session.query(User.username, func.sum(User.value)).group_by(User.username).all()
+    user_list = [user[0] for user in query_res]
+    data = [user[1] for user in query_res]
+    return (user_list, data)
+
+
+
 @app.route('/ce-results', methods=['POST','GET'])
 def handle_data():
-    if request.method == 'POST':
+    if request.method == 'POST' and request.method:
         result = dict(request.form) # {'click': ['{"username":"Mr.Potato","value":1}']}
         click_data = json.loads(result['click'][0]) # {'username': 'Mr.Potato', 'value': 1}
 
@@ -49,49 +87,27 @@ def handle_data():
         db.session.commit()
         current_app.logger.info('A record was successfully added: {}'.format(click_data))
 
-        #[('Mr.Judge', 4), ('Mr.Potato', 5), ('Mrs.Lam', 5)]
-        query_res = db.session.query(User.username, func.sum(User.value)).group_by(User.username).all()
-        user_list = [user[0] for user in query_res]
-        data = [user[1] for user in query_res]
-
-        sql_text = (
-        """
-        SELECT 
-            username, 
-            CAST((JulianDay(Datetime('now','localtime')) - JulianDay(created_at)) * 24 * 60 As Integer),
-            sum(value)
-        FROM user 
-        WHERE created_at >= Datetime('now', '-10 minutes','localtime')
-        AND created_at < Datetime('now','localtime')
-        GROUP BY 1,2
-        """)
-        agg_result = db.engine.execute(sql_text)
-
-        data_dict ={
-            "Mr.Judge":{0:0,1:0,2:0,3:0,4:0,5:0,6:0,7:0,8:0,9:0,10:0},
-            "Mr.Potato":{0:0,1:0,2:0,3:0,4:0,5:0,6:0,7:0,8:0,9:0,10:0},
-            "Mrs.Lam":{0:0,1:0,2:0,3:0,4:0,5:0,6:0,7:0,8:0,9:0,10:0}
-        }
-        for row in agg_result:
-            user = row[0]
-            time_mins = row[1]
-            value = row[2]
-            data_dict[user][time_mins] = value
-
-        agg_data = [list(val.values()) for val in data_dict.values()]
+        sum_data = get_sum_data()
+        period_data = get_last_10_mins_data()
 
         response = make_response(render_template("results.html", 
-            click_data=click_data, 
-            data=data, 
-            user_list=user_list,
-            agg_data=agg_data)
+            data=sum_data[1], 
+            user_list=sum_data[0],
+            agg_data=period_data)
         )
 
-        current_app.logger.info("Response sent")
-
+        current_app.logger.info("POST Response sent")
         return response
     else:
-        return render_template("results.html")
+        sum_data = get_sum_data()
+        period_data = get_last_10_mins_data()
+        response = make_response(render_template("results.html", 
+            data=sum_data[1], 
+            user_list=sum_data[0],
+            agg_data=period_data)
+        )
+        current_app.logger.info("GET Response sent")
+        return response
 
 
 
