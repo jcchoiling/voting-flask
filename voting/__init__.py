@@ -39,6 +39,9 @@ def index():
 
 
 def get_last_10_mins_data():
+
+    res_dict = {}
+
     sql_text = (
     """
     SELECT 
@@ -62,9 +65,11 @@ def get_last_10_mins_data():
         time_mins = row[1]
         value = row[2]
         data_dict[user][time_mins] = value
+    
+    for k in data_dict:
+        res_dict[k] = list(data_dict[k].values())
 
-    data = [list(val.values()) for val in data_dict.values()]
-    return data
+    return res_dict
 
 
 def get_sum_data():

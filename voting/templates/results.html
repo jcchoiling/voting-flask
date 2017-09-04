@@ -52,19 +52,19 @@ var chart = new Chart(stackedChartctx, {
             label: "{{user_list[0]|safe}}",
             backgroundColor: '#3273DC',
             borderColor: '#3273DC',
-            data: {{agg_data[0]}},
+            data: {{agg_data[user_list[0]|safe]}},
         },
         {
             label: "{{user_list[1]|safe}}",
             backgroundColor: '#00D1B2',
             borderColor: '#00D1B2',
-            data: {{agg_data[1]}},
+            data: {{agg_data[user_list[2]|safe]}},
         },
         {
             label: "{{user_list[2]|safe}}",
             backgroundColor: '#FFDD57',
             borderColor: '#FFDD57',
-            data: {{agg_data[2]}},
+            data: {{agg_data[user_list[2]|safe]}},
         }
 
         ]
