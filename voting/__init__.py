@@ -10,11 +10,20 @@ from datetime import datetime
 from flask_sqlalchemy import SQLAlchemy
 from flask import Flask, flash, render_template, request, make_response, current_app
 
+from flask_limiter.util import get_remote_address
+from flask_limiter import Limiter
+
 
 app = Flask(__name__, template_folder='templates', static_folder='static')
+limiter = Limiter(
+    app,
+    key_func=get_remote_address,
+    default_limits=["200 per day", "50 per hour"]
+)
 config.configure_app(app)
 
 db = SQLAlchemy(app)
+
 
 # datamodel
 class User(db.Model):
@@ -80,8 +89,14 @@ def get_sum_data():
     return (user_list, data)
 
 
+@app.route("/slow")
+@limiter.limit("1 per 5 second")
+def slow():
+    return render_template("slow.html", data="success")
+
 
 @app.route('/ce-results', methods=['POST','GET'])
+@limiter.limit("1 per 5 second")
 def handle_data():
     if request.method == 'POST' and request.method:
         result = dict(request.form) # {'click': ['{"username":"Mr.Potato","value":1}']}
