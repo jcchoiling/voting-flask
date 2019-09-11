@@ -11,7 +11,7 @@ class BaseConfig(object):
     # sqlite :memory: identifier is the default if no filepath is present
     SQLALCHEMY_DATABASE_URI = 'sqlite://'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
-    SECRET_KEY = '1d94e52c-1c89-4515-b87a-f48cf3cb7f0b'
+    SECRET_KEY = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
     LOGGING_FORMAT = '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
     LOGGING_LOCATION = 'voting.log'
     LOGGING_LEVEL = logging.DEBUG
@@ -29,14 +29,14 @@ class DevelopmentConfig(BaseConfig):
     DEBUG = True
     TESTING = False
     SQLALCHEMY_DATABASE_URI = 'sqlite:///voting.db'
-    SECRET_KEY = 'a9eec0e0-23b7-4788-9a92-318347b9a39f'
+    SECRET_KEY = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
 
 
 class TestingConfig(BaseConfig):
     DEBUG = False
     TESTING = True
     SQLALCHEMY_DATABASE_URI = 'sqlite:///tmp/voting.db'
-    SECRET_KEY = '792842bc-c4df-4de1-9177-d5207bd9faa6'
+    SECRET_KEY = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
 
 
 config = {
