@@ -3,7 +3,7 @@ Flask==0.12.2
 Flask-Limiter==0.9.5.1
 Flask-SQLAlchemy==2.2
 itsdangerous==0.24
-Jinja2==2.9.6
+Jinja2==2.11.3
 limits==1.2.1
 MarkupSafe==1.0
 pyspark==2.2.0
